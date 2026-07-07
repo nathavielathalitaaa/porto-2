@@ -356,10 +356,16 @@ export default function App() {
               <div className="portfolio__slide-content">
                 <div className="project-sheet">
                   <div className="project-sheet__img-container">
-                    <img src="/assets/images/project-frontend.png" alt="Front End Ujian Kenaikan Level" />
+                    <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer">
+                      <img src="/assets/images/GRIDSTART.png" alt="Front End Ujian Kenaikan Level" />
+                    </a>
                   </div>
                   <div className="project-sheet__info">
-                    <h3>Front End — Ujian Kenaikan Level</h3>
+                    <h3>
+                      <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer" className="project-title-link">
+                        Front End — Ujian Kenaikan Level <i className="fa-solid fa-arrow-up-right-from-square title-link-icon" style={{ fontSize: '0.9rem', marginLeft: '6px' }}></i>
+                      </a>
+                    </h3>
                     <p>
                       Proyek ini merupakan bagian dari ujian kenaikan level di SMK Telkom Sidoarjo. Saya membangun
                       antarmuka front-end menggunakan HTML, CSS, dan JavaScript dengan pendekatan desain responsif,
@@ -367,6 +373,11 @@ export default function App() {
                     </p>
                     <div className="project-sheet__tags">
                       <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+                    </div>
+                    <div style={{ marginTop: '16px' }}>
+                      <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer" className="btn btn--primary" style={{ padding: '8px 16px', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                        Lihat Demo Proyek <i className="fa-solid fa-external-link"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -431,6 +442,7 @@ export default function App() {
           <p className="section__subtitle reveal">Pengalaman dan keterlibatan saya</p>
 
           <div className="timeline">
+            {/* Timeline Item 1: Komisi Disiplin */}
             <div className="timeline__item reveal">
               <div className="timeline__dot"></div>
               <div className="timeline__content">
@@ -443,6 +455,7 @@ export default function App() {
               </div>
             </div>
 
+            {/* Timeline Item 2: DTP Industri */}
             <div className="timeline__item reveal">
               <div className="timeline__dot"></div>
               <div className="timeline__content">
@@ -452,6 +465,86 @@ export default function App() {
                   Tergabung dalam tim deployment untuk proyek DTP industri di Sinergi Hotel &amp; Villa, bertanggung jawab
                   atas konfigurasi dan deployment sistem HRIS di lingkungan produksi.
                 </p>
+              </div>
+            </div>
+
+            {/* Timeline Item 3: LKBB Pandawa */}
+            <div className="timeline__item reveal">
+              <div className="timeline__dot"></div>
+              <div className="timeline__content">
+                <span className="timeline__date">Paskibraka SMA/Sederajat</span>
+                <h3>Juara 2 Perintis — LKBB Pandawa</h3>
+                <p>
+                  Meraih prestasi sebagai Juara Dua Perintis dalam kompetisi Lomba Ketangkasan Baris Berbaris (LKBB) Pandawa
+                  tingkat SMA/Sederajat, yang melatih kedisiplinan, fokus, mentalitas kepemimpinan, dan kerja sama tim.
+                </p>
+                <div className="timeline__img">
+                  <img src="/assets/images/LKBB PANDAWA.jpeg" alt="Sertifikat Juara 2 Perintis LKBB Pandawa" />
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline Item 4: NPC ITS */}
+            <div className="timeline__item reveal">
+              <div className="timeline__dot"></div>
+              <div className="timeline__content">
+                <span className="timeline__date">Institut Teknologi Sepuluh Nopember</span>
+                <h3>Schematics NPC — Capture The Flag (CTF)</h3>
+                <p>
+                  Berpartisipasi aktif dalam ajang Schematics NPC (National Programming Contest) kategori Capture The Flag (CTF)
+                  yang diselenggarakan oleh Departemen Teknik Informatika ITS, menguji kemampuan pemecahan masalah keamanan siber.
+                </p>
+                <div className="timeline__img">
+                  <img src="/assets/images/NPC.png" alt="Sertifikat Schematics NPC ITS" />
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline Item 5: JuaraGCP Season 12 */}
+            <div className="timeline__item reveal">
+              <div className="timeline__dot"></div>
+              <div className="timeline__content">
+                <span className="timeline__date">Google Cloud Indonesia</span>
+                <h3>Google Cloud JuaraGCP Season 12</h3>
+                <p>
+                  Berhasil menyelesaikan modul pelatihan cloud computing dan teknologi kecerdasan buatan (seperti Gemini, Vertex AI, dan cloud infrastructure)
+                  melalui program belajar mandiri komunitatif JuaraGCP Season 12.
+                </p>
+                <div className="timeline__img">
+                  <img src="/assets/images/GCP12.jpeg" alt="Google Cloud JuaraGCP Season 12" />
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline Item 6: IDCamp 2025 */}
+            <div className="timeline__item reveal">
+              <div className="timeline__dot"></div>
+              <div className="timeline__content">
+                <span className="timeline__date">Indosat Ooredoo Hutchison</span>
+                <h3>Beasiswa IDCamp 2025</h3>
+                <p>
+                  Diterima dan berpartisipasi dalam program beasiswa coding Indosat Ooredoo Hutchison Digital Camp (IDCamp) 2025
+                  untuk mempelajari keahlian pemrograman web dan pengembangan perangkat lunak modern.
+                </p>
+                <div className="timeline__img">
+                  <img src="/assets/images/IDCAMP2025.jpeg" alt="Penerimaan Beasiswa IDCamp 2025" />
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline Item 7: RevoU */}
+            <div className="timeline__item reveal">
+              <div className="timeline__dot"></div>
+              <div className="timeline__content">
+                <span className="timeline__date">RevoU Tech Academy</span>
+                <h3>Pelatihan Digital Marketing</h3>
+                <p>
+                  Menyelesaikan program pelatihan intensif dasar-dasar Pemasaran Digital dari RevoU, termasuk mempelajari
+                  analisis performa kampanye bisnis dan menyusun Business Model Canvas (BMC).
+                </p>
+                <div className="timeline__img">
+                  <img src="/assets/images/revou.png" alt="RevoU Tech Academy Digital Marketing" />
+                </div>
               </div>
             </div>
           </div>
