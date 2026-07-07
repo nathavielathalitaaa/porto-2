@@ -324,166 +324,165 @@ export default function App() {
           <h2 className="section__title reveal">Portofolio</h2>
           <p className="section__subtitle reveal">Klik folder untuk menggeser berkas proyek keluar</p>
 
-          <div className="portfolio__projects-list">
-            {/* Project 1 */}
-            <div className={`portfolio__project-row reveal ${activeProject === 0 ? 'active' : ''}`}>
-              <div className="portfolio__folder-wrapper" onClick={() => toggleProject(0)}>
-                <div
-                  className={`folder ${activeProject === 0 ? 'open' : ''}`}
-                  tabIndex={0}
-                  role="button"
-                  aria-expanded={activeProject === 0}
-                  style={{
-                    '--folder-color': '#A8D5BA',
-                    '--folder-back-color': '#8EBD9F',
-                    '--paper-1': '#C6A88E',
-                    '--paper-2': '#f0f0f0',
-                    '--paper-3': '#ffffff',
-                  }}
-                >
-                  <div className="folder__tab"></div>
-                  <div className="folder__back">
-                    <div className="paper paper-1"></div>
-                    <div className="paper paper-2"></div>
-                    <div className="paper paper-3"></div>
-                    <div className="folder__front"></div>
-                    <div className="folder__front right"></div>
-                  </div>
+          <div className="portfolio__folders-row reveal">
+            {/* Folder 1: UKL Kelas 11 */}
+            <div className={`portfolio__folder-item ${activeProject === 0 ? 'active' : ''}`} onClick={() => toggleProject(0)}>
+              <div
+                className={`folder ${activeProject === 0 ? 'open' : ''}`}
+                tabIndex={0}
+                role="button"
+                aria-expanded={activeProject === 0}
+                style={{
+                  '--folder-color': '#A8D5BA',
+                  '--folder-back-color': '#8EBD9F',
+                  '--paper-1': '#C6A88E',
+                  '--paper-2': '#f0f0f0',
+                  '--paper-3': '#ffffff',
+                }}
+              >
+                <div className="folder__tab"></div>
+                <div className="folder__back">
+                  <div className="paper paper-1"></div>
+                  <div className="paper paper-2"></div>
+                  <div className="paper paper-3"></div>
+                  <div className="folder__front"></div>
+                  <div className="folder__front right"></div>
                 </div>
-                <p className="portfolio__folder-label">Front End — Ujian Kenaikan Level</p>
               </div>
+              <p className="portfolio__folder-label">UKL Kelas 11<br />(Grid Start)</p>
+            </div>
 
-              <div className="portfolio__slide-content">
-                <div className="project-sheet">
-                  <div className="project-sheet__img-container">
-                    <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer">
-                      <img src="/assets/images/GRIDSTART.png" alt="Front End Ujian Kenaikan Level" />
+            {/* Folder 2: UKL Kelas 10 */}
+            <div className={`portfolio__folder-item ${activeProject === 1 ? 'active' : ''}`} onClick={() => toggleProject(1)}>
+              <div
+                className={`folder ${activeProject === 1 ? 'open' : ''}`}
+                tabIndex={0}
+                role="button"
+                aria-expanded={activeProject === 1}
+                style={{
+                  '--folder-color': '#A8D5BA',
+                  '--folder-back-color': '#8EBD9F',
+                  '--paper-1': '#C6A88E',
+                  '--paper-2': '#f0f0f0',
+                  '--paper-3': '#ffffff',
+                }}
+              >
+                <div className="folder__tab"></div>
+                <div className="folder__back">
+                  <div className="paper paper-1"></div>
+                  <div className="paper paper-2"></div>
+                  <div className="paper paper-3"></div>
+                  <div className="folder__front"></div>
+                  <div className="folder__front right"></div>
+                </div>
+              </div>
+              <p className="portfolio__folder-label">UKL Kelas 10<br />(Travel Easy)</p>
+            </div>
+
+            {/* Folder 3: DTP HRIS */}
+            <div className={`portfolio__folder-item ${activeProject === 2 ? 'active' : ''}`} onClick={() => toggleProject(2)}>
+              <div
+                className={`folder ${activeProject === 2 ? 'open' : ''}`}
+                tabIndex={0}
+                role="button"
+                aria-expanded={activeProject === 2}
+                style={{
+                  '--folder-color': '#A8D5BA',
+                  '--folder-back-color': '#8EBD9F',
+                  '--paper-1': '#C6A88E',
+                  '--paper-2': '#f0f0f0',
+                  '--paper-3': '#ffffff',
+                }}
+              >
+                <div className="folder__tab"></div>
+                <div className="folder__back">
+                  <div className="paper paper-1"></div>
+                  <div className="paper paper-2"></div>
+                  <div className="paper paper-3"></div>
+                  <div className="folder__front"></div>
+                  <div className="folder__front right"></div>
+                </div>
+              </div>
+              <p className="portfolio__folder-label">DTP Industri<br />(HRIS Sinergi)</p>
+            </div>
+          </div>
+
+          <div className="portfolio__details-container reveal">
+            {/* Project 1 Sheet */}
+            <div className={`portfolio__slide-content ${activeProject === 0 ? 'active' : ''}`}>
+              <div className="project-sheet">
+                <div className="project-sheet__img-container">
+                  <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/images/GRIDSTART.png" alt="Front End Ujian Kenaikan Level" />
+                  </a>
+                </div>
+                <div className="project-sheet__info">
+                  <h3>
+                    <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer" className="project-title-link">
+                      Front End — Ujian Kenaikan Level (Grid Start) <i className="fa-solid fa-arrow-up-right-from-square title-link-icon" style={{ fontSize: '0.9rem', marginLeft: '6px' }}></i>
                     </a>
+                  </h3>
+                  <p>
+                    Proyek ini merupakan bagian dari ujian kenaikan level kelas 11 di SMK Telkom Sidoarjo. Saya membangun
+                    antarmuka front-end menggunakan HTML, CSS, dan JavaScript dengan pendekatan desain responsif,
+                    clean, interaktif, dan modern.
+                  </p>
+                  <div className="project-sheet__tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
                   </div>
-                  <div className="project-sheet__info">
-                    <h3>
-                      <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer" className="project-title-link">
-                        Front End — Ujian Kenaikan Level <i className="fa-solid fa-arrow-up-right-from-square title-link-icon" style={{ fontSize: '0.9rem', marginLeft: '6px' }}></i>
-                      </a>
-                    </h3>
-                    <p>
-                      Proyek ini merupakan bagian dari ujian kenaikan level di SMK Telkom Sidoarjo. Saya membangun
-                      antarmuka front-end menggunakan HTML, CSS, dan JavaScript dengan pendekatan desain responsif,
-                      clean, interaktif, dan modern.
-                    </p>
-                    <div className="project-sheet__tags">
-                      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
-                    </div>
-                    <div style={{ marginTop: '16px' }}>
-                      <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer" className="btn btn--primary" style={{ padding: '8px 16px', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                        Lihat Demo Proyek <i className="fa-solid fa-external-link"></i>
-                      </a>
-                    </div>
+                  <div style={{ marginTop: '16px' }}>
+                    <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer" className="btn btn--primary" style={{ padding: '8px 16px', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                      Lihat Demo Proyek <i className="fa-solid fa-external-link"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Project 2: Travel Easy (Kelas 10) */}
-            <div className={`portfolio__project-row reveal ${activeProject === 1 ? 'active' : ''}`}>
-              <div className="portfolio__folder-wrapper" onClick={() => toggleProject(1)}>
-                <div
-                  className={`folder ${activeProject === 1 ? 'open' : ''}`}
-                  tabIndex={0}
-                  role="button"
-                  aria-expanded={activeProject === 1}
-                  style={{
-                    '--folder-color': '#A8D5BA',
-                    '--folder-back-color': '#8EBD9F',
-                    '--paper-1': '#C6A88E',
-                    '--paper-2': '#f0f0f0',
-                    '--paper-3': '#ffffff',
-                  }}
-                >
-                  <div className="folder__tab"></div>
-                  <div className="folder__back">
-                    <div className="paper paper-1"></div>
-                    <div className="paper paper-2"></div>
-                    <div className="paper paper-3"></div>
-                    <div className="folder__front"></div>
-                    <div className="folder__front right"></div>
-                  </div>
+            {/* Project 2 Sheet */}
+            <div className={`portfolio__slide-content ${activeProject === 1 ? 'active' : ''}`}>
+              <div className="project-sheet">
+                <div className="project-sheet__img-container">
+                  <a href="https://github.com/naylasufiatuz/Travel-Easy" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/images/TRAVELEASY.jpeg" alt="Web Project UKL Kelas 10 Travel Easy" />
+                  </a>
                 </div>
-                <p className="portfolio__folder-label">Web Project — UKL Kelas 10 (Travel Easy)</p>
-              </div>
-
-              <div className="portfolio__slide-content">
-                <div className="project-sheet">
-                  <div className="project-sheet__img-container">
-                    <a href="https://github.com/naylasufiatuz/Travel-Easy" target="_blank" rel="noopener noreferrer">
-                      <img src="/assets/images/TRAVELEASY.jpeg" alt="Web Project UKL Kelas 10 Travel Easy" />
+                <div className="project-sheet__info">
+                  <h3>
+                    <a href="https://github.com/naylasufiatuz/Travel-Easy" target="_blank" rel="noopener noreferrer" className="project-title-link">
+                      Web Project — UKL Kelas 10 (Travel Easy) <i className="fa-solid fa-arrow-up-right-from-square title-link-icon" style={{ fontSize: '0.9rem', marginLeft: '6px' }}></i>
                     </a>
+                  </h3>
+                  <p>
+                    Proyek Ujian Kenaikan Level (UKL) kelas 10 di SMK Telkom Sidoarjo. Aplikasi web bertema pemesanan travel yang dirancang dengan antarmuka pengguna (UI) yang interaktif, bersih, modern, dan informatif.
+                  </p>
+                  <div className="project-sheet__tags">
+                    <span>HTML</span><span>CSS</span><span>Web Design</span><span>UI/UX</span>
                   </div>
-                  <div className="project-sheet__info">
-                    <h3>
-                      <a href="https://github.com/naylasufiatuz/Travel-Easy" target="_blank" rel="noopener noreferrer" className="project-title-link">
-                        Web Project — UKL Kelas 10 (Travel Easy) <i className="fa-solid fa-arrow-up-right-from-square title-link-icon" style={{ fontSize: '0.9rem', marginLeft: '6px' }}></i>
-                      </a>
-                    </h3>
-                    <p>
-                      Proyek Ujian Kenaikan Level (UKL) kelas 10 di SMK Telkom Sidoarjo. Aplikasi web bertema pemesanan travel yang dirancang dengan antarmuka pengguna (UI) yang interaktif, bersih, modern, dan informatif.
-                    </p>
-                    <div className="project-sheet__tags">
-                      <span>HTML</span><span>CSS</span><span>Web Design</span><span>UI/UX</span>
-                    </div>
-                    <div style={{ marginTop: '16px' }}>
-                      <a href="https://github.com/naylasufiatuz/Travel-Easy" target="_blank" rel="noopener noreferrer" className="btn btn--primary" style={{ padding: '8px 16px', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                        Lihat Source Code <i className="fab fa-github"></i>
-                      </a>
-                    </div>
+                  <div style={{ marginTop: '16px' }}>
+                    <a href="https://github.com/naylasufiatuz/Travel-Easy" target="_blank" rel="noopener noreferrer" className="btn btn--primary" style={{ padding: '8px 16px', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                      Lihat Source Code <i className="fab fa-github"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Project 3: Deployment DTP */}
-            <div className={`portfolio__project-row reveal ${activeProject === 2 ? 'active' : ''}`}>
-              <div className="portfolio__folder-wrapper" onClick={() => toggleProject(2)}>
-                <div
-                  className={`folder ${activeProject === 2 ? 'open' : ''}`}
-                  tabIndex={0}
-                  role="button"
-                  aria-expanded={activeProject === 2}
-                  style={{
-                    '--folder-color': '#A8D5BA',
-                    '--folder-back-color': '#8EBD9F',
-                    '--paper-1': '#C6A88E',
-                    '--paper-2': '#f0f0f0',
-                    '--paper-3': '#ffffff',
-                  }}
-                >
-                  <div className="folder__tab"></div>
-                  <div className="folder__back">
-                    <div className="paper paper-1"></div>
-                    <div className="paper paper-2"></div>
-                    <div className="paper paper-3"></div>
-                    <div className="folder__front"></div>
-                    <div className="folder__front right"></div>
-                  </div>
+            {/* Project 3 Sheet */}
+            <div className={`portfolio__slide-content ${activeProject === 2 ? 'active' : ''}`}>
+              <div className="project-sheet">
+                <div className="project-sheet__img-container">
+                  <img src="/assets/images/project-hris.png" alt="HRIS Deployment" />
                 </div>
-                <p className="portfolio__folder-label">Deployment DTP — HRIS Sinergi Hotel &amp; Villa</p>
-              </div>
-
-              <div className="portfolio__slide-content">
-                <div className="project-sheet">
-                  <div className="project-sheet__img-container">
-                    <img src="/assets/images/project-hris.png" alt="HRIS Deployment" />
-                  </div>
-                  <div className="project-sheet__info">
-                    <h3>Deployment DTP — HRIS Sinergi Hotel &amp; Villa</h3>
-                    <p>
-                      Proyek DTP (Dunia Teknik Profesional) berkolaborasi dengan Sinergi Hotel &amp; Villa untuk men-deploy
-                      sistem HRIS. Meliputi konfigurasi server Linux, deployment aplikasi, database setup, dan monitoring
-                      kestabilan.
-                    </p>
-                    <div className="project-sheet__tags">
-                      <span>Deployment</span><span>Cloud Computing</span><span>Linux Server</span><span>Networking</span>
-                    </div>
+                <div className="project-sheet__info">
+                  <h3>Deployment DTP — HRIS Sinergi Hotel &amp; Villa</h3>
+                  <p>
+                    Proyek DTP (Dunia Teknik Profesional) berkolaborasi dengan Sinergi Hotel &amp; Villa untuk men-deploy
+                    sistem HRIS. Meliputi konfigurasi server Linux, deployment aplikasi, database setup, dan monitoring
+                    kestabilan.
+                  </p>
+                  <div className="project-sheet__tags">
+                    <span>Deployment</span><span>Cloud Computing</span><span>Linux Server</span><span>Networking</span>
                   </div>
                 </div>
               </div>
