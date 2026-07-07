@@ -209,7 +209,7 @@ export default function App() {
           <div className="about__content">
             <div className="about__image reveal">
               <div className="about__img-wrapper">
-                <img src="/assets/images/profile2.jpeg" alt="Nayla Sufiatuz Zahro" />
+                <img src="assets/images/profile2.jpeg" alt="Nayla Sufiatuz Zahro" />
               </div>
             </div>
             <div className="about__info reveal">
@@ -413,7 +413,7 @@ export default function App() {
               <div className="project-sheet">
                 <div className="project-sheet__img-container">
                   <a href="https://harisgold.great-site.net/?i=1" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/images/GRIDSTART.png" alt="Front End Ujian Kenaikan Level" />
+                    <img src="assets/images/GRIDSTART.png" alt="Front End Ujian Kenaikan Level" />
                   </a>
                 </div>
                 <div className="project-sheet__info">
@@ -444,7 +444,7 @@ export default function App() {
               <div className="project-sheet">
                 <div className="project-sheet__img-container">
                   <a href="https://github.com/naylasufiatuz/Travel-Easy" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/images/TRAVELEASY.jpeg" alt="Web Project UKL Kelas 10 Travel Easy" />
+                    <img src="assets/images/TRAVELEASY.jpeg" alt="Web Project UKL Kelas 10 Travel Easy" />
                   </a>
                 </div>
                 <div className="project-sheet__info">
@@ -472,7 +472,7 @@ export default function App() {
             <div className={`portfolio__slide-content ${activeProject === 2 ? 'active' : ''}`}>
               <div className="project-sheet">
                 <div className="project-sheet__img-container">
-                  <img src="/assets/images/project-hris.png" alt="HRIS Deployment" />
+                  <img src="assets/images/project-hris.png" alt="HRIS Deployment" />
                 </div>
                 <div className="project-sheet__info">
                   <h3>Deployment DTP — HRIS Sinergi Hotel &amp; Villa</h3>
@@ -535,7 +535,7 @@ export default function App() {
                   tingkat SMA/Sederajat, yang melatih kedisiplinan, fokus, mentalitas kepemimpinan, dan kerja sama tim.
                 </p>
                 <div className="timeline__img">
-                  <img src="/assets/images/LKBB PANDAWA.jpeg" alt="Sertifikat Juara 2 Perintis LKBB Pandawa" />
+                  <img src="assets/images/LKBB PANDAWA.jpeg" alt="Sertifikat Juara 2 Perintis LKBB Pandawa" />
                 </div>
               </div>
             </div>
@@ -551,7 +551,7 @@ export default function App() {
                   yang diselenggarakan oleh Departemen Teknik Informatika ITS, menguji kemampuan pemecahan masalah keamanan siber.
                 </p>
                 <div className="timeline__img">
-                  <img src="/assets/images/NPC.png" alt="Sertifikat Schematics NPC ITS" />
+                  <img src="assets/images/NPC.png" alt="Sertifikat Schematics NPC ITS" />
                 </div>
               </div>
             </div>
@@ -567,7 +567,7 @@ export default function App() {
                   melalui program belajar mandiri komunitatif JuaraGCP Season 12.
                 </p>
                 <div className="timeline__img">
-                  <img src="/assets/images/GCP12.jpeg" alt="Google Cloud JuaraGCP Season 12" />
+                  <img src="assets/images/GCP12.jpeg" alt="Google Cloud JuaraGCP Season 12" />
                 </div>
               </div>
             </div>
@@ -583,7 +583,7 @@ export default function App() {
                   untuk mempelajari keahlian pemrograman web dan pengembangan perangkat lunak modern.
                 </p>
                 <div className="timeline__img">
-                  <img src="/assets/images/IDCAMP2025.jpeg" alt="Penerimaan Beasiswa IDCamp 2025" />
+                  <img src="assets/images/IDCAMP2025.jpeg" alt="Penerimaan Beasiswa IDCamp 2025" />
                 </div>
               </div>
             </div>
@@ -599,7 +599,7 @@ export default function App() {
                   analisis performa kampanye bisnis dan menyusun Business Model Canvas (BMC).
                 </p>
                 <div className="timeline__img">
-                  <img src="/assets/images/revou.png" alt="RevoU Tech Academy Digital Marketing" />
+                  <img src="assets/images/revou.png" alt="RevoU Tech Academy Digital Marketing" />
                 </div>
               </div>
             </div>

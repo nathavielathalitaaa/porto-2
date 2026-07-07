@@ -157,7 +157,7 @@ function Band({
   // Load avatar image and draw it onto the front texture once loaded
   useEffect(() => {
     const avatar = new Image();
-    avatar.src = '/assets/images/profile2.jpeg';
+    avatar.src = 'assets/images/profile2.jpeg';
     avatar.onload = () => {
       const tex = textures.front;
       const canvas = tex.image;
