@@ -435,10 +435,10 @@ export default function App() {
               <div className="timeline__dot"></div>
               <div className="timeline__content">
                 <span className="timeline__date">SMK Telkom Sidoarjo</span>
-                <h3>Anggota MPK</h3>
+                <h3>Anggota Komisi Disiplin</h3>
                 <p>
-                  Aktif sebagai anggota Majelis Permusyawaratan Kelas (MPK) di SMK Telkom Sidoarjo, berkontribusi dalam
-                  aspirasi dan pengawasan kegiatan siswa.
+                  Aktif sebagai anggota Komisi Disiplin di SMK Telkom Sidoarjo, berkontribusi dalam
+                  menegakkan tata tertib dan mengawasi kedisiplinan siswa.
                 </p>
               </div>
             </div>
