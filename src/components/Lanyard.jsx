@@ -92,14 +92,14 @@ function Band({
 
         // Header text - Pure White for readability
         ctx.fillStyle = '#FFFFFF';
-        ctx.font = 'bold 44px "Cormorant Garamond", serif';
+        ctx.font = '800 44px "Outfit", sans-serif';
         ctx.textAlign = 'center';
         ctx.fillText('SMK TELKOM SIDOARJO', canvas.width / 2, 148);
 
         // Name, Class, Dept details - Made much larger and bolder
         ctx.fillStyle = '#101612';
-        ctx.font = '900 92px "Lora", serif';
-        ctx.fillText('N. Sufiatuz Zahro', canvas.width / 2, 980);
+        ctx.font = '800 80px "Outfit", sans-serif';
+        ctx.fillText('Nayla Sufiatuz Zahro', canvas.width / 2, 980);
 
         // Role tag background - Dark Green for high contrast
         ctx.fillStyle = '#2E3A32';
@@ -109,12 +109,12 @@ function Band({
 
         // Role tag text - White on Dark Green
         ctx.fillStyle = '#FAFAF7';
-        ctx.font = 'bold 40px "Cormorant Garamond", serif';
+        ctx.font = '800 40px "Outfit", sans-serif';
         ctx.fillText('STUDENT', canvas.width / 2, 1102);
 
         // Dept text - Darker green for readability
         ctx.fillStyle = '#2E3A32';
-        ctx.font = 'bold 48px "Lora", serif';
+        ctx.font = '800 48px "Outfit", sans-serif';
         ctx.fillText('SIJA — CLASS XII', canvas.width / 2, 1230);
       } else {
         // --- BACK SIDE ---
@@ -129,10 +129,10 @@ function Band({
         ctx.save();
         ctx.translate(canvas.width / 2, canvas.height / 2);
         ctx.rotate(-Math.PI / 6);
-        ctx.fillStyle = 'rgba(46, 58, 50, 0.12)';
+        ctx.fillStyle = 'rgba(46, 58, 50, 0.25)'; // Increased opacity for visibility
         ctx.textAlign = 'center';
 
-        ctx.font = '800 128px "Cormorant Garamond", sans-serif';
+        ctx.font = '800 128px "Outfit", sans-serif';
         ctx.fillText('SIJA', 0, -240);
         ctx.fillText('CLOUD', 0, -60);
         ctx.fillText('NETWORK', 0, 120);
@@ -163,14 +163,40 @@ function Band({
       const canvas = tex.image;
       const ctx = canvas.getContext('2d');
       if (ctx) {
+        // Destination size and position
+        const dw = 540;
+        const dh = 540;
+        const dx = canvas.width / 2 - dw / 2;
+        const dy = 580 - dh / 2;
+
+        // Calculate aspect ratio crop (object-fit: cover)
+        const sw = avatar.width;
+        const sh = avatar.height;
+        let sx = 0;
+        let sy = 0;
+        let sWidth = sw;
+        let sHeight = sh;
+
+        if (sw / sh > dw / dh) {
+          // Image is landscape (wider) -> crop sides
+          sWidth = sh * (dw / dh);
+          sx = (sw - sWidth) / 2;
+          sy = 0;
+        } else {
+          // Image is portrait (taller) -> crop top/bottom (focus on the top part)
+          sHeight = sw * (dh / dw);
+          sx = 0;
+          sy = 0;
+        }
+
         // Clip circle (Larger radius = 270)
         ctx.save();
         ctx.beginPath();
         ctx.arc(canvas.width / 2, 580, 270, 0, Math.PI * 2);
         ctx.clip();
         
-        // Draw profile image (Larger size = 540x540)
-        ctx.drawImage(avatar, canvas.width / 2 - 270, 310, 540, 540);
+        // Draw profile image with cover crop to avoid squishing
+        ctx.drawImage(avatar, sx, sy, sWidth, sHeight, dx, dy, dw, dh);
         ctx.restore();
 
         // Draw green border around profile image
