@@ -18,20 +18,20 @@ export default function App() {
   // Skills book list data
   const allSkills = [
     // Hard Skills
-    { name: 'HTML & CSS', tabLabel: 'HTML/CSS', icon: 'fas fa-laptop-code', val: 7, color: '#FCE4EC', desc: 'Mampu membangun antarmuka web yang rapi, responsif, dan terstruktur dengan baik menggunakan HTML5 semantik dan CSS3 modern.', category: 'Hard Skill' },
-    { name: 'JavaScript', tabLabel: 'JS', icon: 'fab fa-js-square', val: 6, color: '#FFF8E1', desc: 'Memahami logika pemrograman JavaScript untuk menambahkan interaktivitas dinamis pada halaman web portofolio.', category: 'Hard Skill' },
-    { name: 'Networking', tabLabel: 'Network', icon: 'fas fa-network-wired', val: 8, color: '#E0F7FA', desc: 'Menguasai konsep dasar jaringan, konfigurasi routing & switching, subnetting, serta instalasi infrastruktur jaringan lokal.', category: 'Hard Skill' },
-    { name: 'Cloud Computing', tabLabel: 'Cloud', icon: 'fas fa-cloud', val: 7, color: '#E8F5E9', desc: 'Memahami infrastruktur cloud, manajemen virtual machine, deployment aplikasi berbasis cloud, dan alokasi resource komputasi.', category: 'Hard Skill' },
-    { name: 'Linux Server', tabLabel: 'Linux', icon: 'fab fa-linux', val: 7, color: '#ECEFF1', desc: 'Mampu melakukan instalasi dan administrasi server berbasis Linux (Ubuntu/CentOS), konfigurasi web server, database, dan keamanan.', category: 'Hard Skill' },
-    { name: 'Figma', tabLabel: 'Figma', icon: 'fab fa-figma', val: 6, color: '#F3E5F5', desc: 'Dapat merancang wireframe, mockup, dan desain antarmuka pengguna (UI/UX) yang bersih dan intuitif sebelum tahap coding.', category: 'Hard Skill' },
+    { name: 'HTML & CSS', tabLabel: 'HTML/CSS', icon: 'fas fa-laptop-code', iconColor: '#E44D26', val: 7, color: '#FCE4EC', desc: 'Mampu membangun antarmuka web yang rapi, responsif, dan terstruktur dengan baik menggunakan HTML5 semantik dan CSS3 modern.', category: 'Hard Skill' },
+    { name: 'JavaScript', tabLabel: 'JS', icon: 'fab fa-js-square', iconColor: '#E5A823', val: 6, color: '#FFF8E1', desc: 'Memahami logika pemrograman JavaScript untuk menambahkan interaktivitas dinamis pada halaman web portofolio.', category: 'Hard Skill' },
+    { name: 'Networking', tabLabel: 'Network', icon: 'fas fa-network-wired', iconColor: '#2980B9', val: 8, color: '#E0F7FA', desc: 'Menguasai konsep dasar jaringan, konfigurasi routing & switching, subnetting, serta instalasi infrastruktur jaringan lokal.', category: 'Hard Skill' },
+    { name: 'Cloud Computing', tabLabel: 'Cloud', icon: 'fas fa-cloud', iconColor: '#0288D1', val: 7, color: '#E8F5E9', desc: 'Memahami infrastruktur cloud, manajemen virtual machine, deployment aplikasi berbasis cloud, dan alokasi resource komputasi.', category: 'Hard Skill' },
+    { name: 'Linux Server', tabLabel: 'Linux', icon: 'fab fa-linux', iconColor: '#111111', val: 7, color: '#ECEFF1', desc: 'Mampu melakukan instalasi dan administrasi server berbasis Linux (Ubuntu/CentOS), konfigurasi web server, database, dan keamanan.', category: 'Hard Skill' },
+    { name: 'Figma', tabLabel: 'Figma', icon: 'fab fa-figma', iconColor: '#F24E1E', val: 6, color: '#F3E5F5', desc: 'Dapat merancang wireframe, mockup, dan desain antarmuka pengguna (UI/UX) yang bersih dan intuitif sebelum tahap coding.', category: 'Hard Skill' },
     
     // Soft Skills
-    { name: 'Kreativitas', tabLabel: 'Kreatif', icon: 'fas fa-lightbulb', val: 9, color: '#FCE4EC', desc: 'Menghadirkan ide-ide baru yang segar baik dalam desain visual proyek maupun pencarian solusi atas kendala teknis.', category: 'Soft Skill' },
-    { name: 'Komunikasi', tabLabel: 'Komunikasi', icon: 'fas fa-comments', val: 8, color: '#E8F5E9', desc: 'Mampu menyampaikan informasi teknis secara jelas dan berkolaborasi secara lisan maupun tulisan dengan baik.', category: 'Soft Skill' },
-    { name: 'Kerja Tim', tabLabel: 'Kerja Tim', icon: 'fas fa-people-carry-box', val: 8, color: '#E0F7FA', desc: 'Berkontribusi aktif di dalam tim deployment DTP untuk menyelesaikan integrasi server dan kelancaran sistem bersama.', category: 'Soft Skill' },
-    { name: 'Manajemen Waktu', tabLabel: 'Waktu', icon: 'fas fa-clock', val: 7, color: '#FFF8E1', desc: 'Dapat membagi tugas akademik dan proyek sekolah secara seimbang agar pengerjaan selesai tepat waktu.', category: 'Soft Skill' },
-    { name: 'Detail Oriented', tabLabel: 'Detail', icon: 'fas fa-magnifying-glass', val: 8, color: '#F3E5F5', desc: 'Fokus pada kerapian struktur kode, detail visual desain antarmuka, dan keakuratan data konfigurasi server.', category: 'Soft Skill' },
-    { name: 'Problem Solving', tabLabel: 'Problem', icon: 'fas fa-puzzle-piece', val: 7, color: '#E8EAF6', desc: 'Mampu menganalisis masalah teknis, mendiagnosis kegagalan server/routing, dan mencari solusi pemecahan yang efektif.', category: 'Soft Skill' }
+    { name: 'Kreativitas', tabLabel: 'Kreatif', icon: 'fas fa-lightbulb', iconColor: '#FFB300', val: 9, color: '#FCE4EC', desc: 'Menghadirkan ide-ide baru yang segar baik dalam desain visual proyek maupun pencarian solusi atas kendala teknis.', category: 'Soft Skill' },
+    { name: 'Komunikasi', tabLabel: 'Komunikasi', icon: 'fas fa-comments', iconColor: '#4CAF50', val: 8, color: '#E8F5E9', desc: 'Mampu menyampaikan informasi teknis secara jelas dan berkolaborasi secara lisan maupun tulisan dengan baik.', category: 'Soft Skill' },
+    { name: 'Kerja Tim', tabLabel: 'Kerja Tim', icon: 'fas fa-people-carry-box', iconColor: '#3F51B5', val: 8, color: '#E0F7FA', desc: 'Berkontribusi aktif di dalam tim deployment DTP untuk menyelesaikan integrasi server dan kelancaran sistem bersama.', category: 'Soft Skill' },
+    { name: 'Manajemen Waktu', tabLabel: 'Waktu', icon: 'fas fa-clock', iconColor: '#E91E63', val: 7, color: '#FFF8E1', desc: 'Dapat membagi tugas akademik dan proyek sekolah secara seimbang agar pengerjaan selesai tepat waktu.', category: 'Soft Skill' },
+    { name: 'Detail Oriented', tabLabel: 'Detail', icon: 'fas fa-magnifying-glass', iconColor: '#607D8B', val: 8, color: '#F3E5F5', desc: 'Fokus pada kerapian struktur kode, detail visual desain antarmuka, dan keakuratan data konfigurasi server.', category: 'Soft Skill' },
+    { name: 'Problem Solving', tabLabel: 'Problem', icon: 'fas fa-puzzle-piece', iconColor: '#FF5722', val: 7, color: '#E8EAF6', desc: 'Mampu menganalisis masalah teknis, mendiagnosis kegagalan server/routing, dan mencari solusi pemecahan yang efektif.', category: 'Soft Skill' }
   ];
 
   // Battery Skill helper to render 10 cells
@@ -166,6 +166,11 @@ export default function App() {
 
       {/* ===================== HERO SECTION ===================== */}
       <section className="hero" id="home">
+        {/* Ambient Decorative Background Orbs */}
+        <div className="hero__orb hero__orb--1"></div>
+        <div className="hero__orb hero__orb--2"></div>
+        <div className="hero__orb hero__orb--3"></div>
+
         <div className="container hero__inner">
           <div className="hero__text">
             <SplitText
@@ -204,7 +209,7 @@ export default function App() {
           <div className="about__content">
             <div className="about__image reveal">
               <div className="about__img-wrapper">
-                <img src="/assets/images/profile.png" alt="Nayla Sufiatuz Zahro" />
+                <img src="/assets/images/profile2.jpeg" alt="Nayla Sufiatuz Zahro" />
               </div>
             </div>
             <div className="about__info reveal">
@@ -274,7 +279,7 @@ export default function App() {
                 <div className="skills-book__header">
                   <div className="skills-book__badge">{allSkills[activeSkillIndex].category}</div>
                   <div className="skills-book__title-row">
-                    <i className={`${allSkills[activeSkillIndex].icon} skill-icon-large`}></i>
+                    <i className={`${allSkills[activeSkillIndex].icon} skill-icon-large`} style={{ color: allSkills[activeSkillIndex].iconColor }}></i>
                     <h3>{allSkills[activeSkillIndex].name}</h3>
                   </div>
                 </div>
@@ -302,7 +307,7 @@ export default function App() {
                   className={`skills-book__tab ${activeSkillIndex === index ? 'active' : ''}`}
                   style={{
                     '--tab-color': skill.color,
-                    zIndex: activeSkillIndex === index ? 20 : 10 - index,
+                    zIndex: activeSkillIndex === index ? 30 : allSkills.length - index,
                   }}
                 >
                   <span className="tab-text">{skill.tabLabel}</span>
@@ -331,7 +336,7 @@ export default function App() {
                   style={{
                     '--folder-color': '#A8D5BA',
                     '--folder-back-color': '#8EBD9F',
-                    '--paper-1': '#e6e6e6',
+                    '--paper-1': '#C6A88E',
                     '--paper-2': '#f0f0f0',
                     '--paper-3': '#ffffff',
                   }}
@@ -379,7 +384,7 @@ export default function App() {
                   style={{
                     '--folder-color': '#A8D5BA',
                     '--folder-back-color': '#8EBD9F',
-                    '--paper-1': '#e6e6e6',
+                    '--paper-1': '#C6A88E',
                     '--paper-2': '#f0f0f0',
                     '--paper-3': '#ffffff',
                   }}
